@@ -1,0 +1,26 @@
+.jumbotron {
+    background-image: url("../images/bac_img.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: navy
+}
+
+body {
+    background-color: skyblue;
+    color: navy
+}
+
+div {
+    background-color:skyblue;
+}
+
+.well {
+    background-color: skyblue;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: skyblue;
+    color: navy;
+
+}
