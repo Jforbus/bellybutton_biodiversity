@@ -94,8 +94,10 @@ function barChart(sample) {
      paper_bgcolor: "rgba(0,0,0,0)",
      plot_bgcolor: "rgba(0,0,0,0)"
     };
+    // Make plot responsive to screen size
+    var config = {responsive: true};
     // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot('bar', barData, barLayout);
+    Plotly.newPlot('bar', barData, barLayout,config);
   });
 };
 
@@ -120,7 +122,8 @@ function bubbleChart (sample) {
       mode: 'markers',
       marker: {
         size: sample_values,
-        color: otu_ids
+        color: otu_ids,
+        colorscale: 'Jet'
       },
       text: otu_labels 
     }];
@@ -128,7 +131,6 @@ function bubbleChart (sample) {
     // Create the layout for the bubble chart.
     var bubbleLayout = {
       title: {text:'<b>Bacteria Cultures Per Sample</b>', font:{color: 'navy'}},
-      xaxis: {},
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
       yaxis:{
@@ -137,11 +139,14 @@ function bubbleChart (sample) {
       xaxis:{
         title: 'OTU ID',
         gridcolor: 'white'
-      }
+      },
+      hovermode: 'closest'
     };
 
+    // Make plot responsive to screen size
+    var config = {responsive: true};
     // Use Plotly to plot the data with the layout.
-    Plotly.newPlot('bubble', bubbleData, bubbleLayout); 
+    Plotly.newPlot('bubble', bubbleData, bubbleLayout, config); 
   });
 };
 
@@ -185,8 +190,9 @@ function gaugeChart(sample) {
       plot_bgcolor: "rgba(0,0,0,0)",
       font: {color: 'navy'}
     };
-
+    // Make plot responsive to screen size
+    var config = {responsive: true};
     // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot('gauge', gaugeData, gaugeLayout);
+    Plotly.newPlot('gauge', gaugeData, gaugeLayout, config);
   });  
 };

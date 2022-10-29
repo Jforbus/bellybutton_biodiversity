@@ -2,7 +2,8 @@
     background-image: url("../images/bac_img.jpg");
     background-size: 100% 100%;
     text-align: center;
-    color: navy
+    text-shadow: 1px 1px 1px black;
+    color: navy;
 }
 
 body {
