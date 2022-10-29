@@ -92,7 +92,8 @@ function barChart(sample) {
     var barLayout = {
      title:{text:'<b>Top 10 Bacteria Cultures Found</b>', font:{color: 'navy'}},
      paper_bgcolor: "rgba(0,0,0,0)",
-     plot_bgcolor: "rgba(0,0,0,0)"
+     plot_bgcolor: "rgba(0,0,0,0)",
+     autosize: true
     };
     // Make plot responsive to screen size
     var config = {responsive: true};
@@ -140,7 +141,8 @@ function bubbleChart (sample) {
         title: 'OTU ID',
         gridcolor: 'white'
       },
-      hovermode: 'closest'
+      hovermode: 'closest',
+      autosize: true
     };
 
     // Make plot responsive to screen size
@@ -188,7 +190,8 @@ function gaugeChart(sample) {
       autosize: true,
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      font: {color: 'navy'}
+      font: {color: 'navy'},
+      autosize: true
     };
     // Make plot responsive to screen size
     var config = {responsive: true};
