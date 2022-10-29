@@ -1,7 +1,7 @@
 # Bellybutton_Biodiversity
 
 ## Project Overview
-A dashboard to visualize the results of a study to find the different types and quantities of Bacteria located in an human belly buttons.
+A dashboard to visualize the results of a study to find the different types and quantities of Bacteria located in human belly buttons.
 
 ### Project Link
 https://jforbus.github.io/bellybutton_biodiversity/
